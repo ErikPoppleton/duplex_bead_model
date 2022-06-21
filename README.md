@@ -12,3 +12,7 @@ This will generate a couple different visualization/simulation options.  First i
 These files are terrible for visualization (and require a hacked version of oxView anyway) but might be useful for model generation.
 The second file is a regular oxDNA file with just the median base pair in each helix (rounded down on the lower indexed strand in the oxDNA file in the case of even-length strands). 
 This also comes with some oxView instructions for generating pretty images overlaying this file on the original mean structure.
+<p float="center">
+  <img src="/ico/beads.png" width="45%" />
+  <img src="/ico/overlay.png" width="45%" /> 
+</p>
