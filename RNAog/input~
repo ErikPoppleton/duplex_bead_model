@@ -1,0 +1,49 @@
+##############################
+####  PROGRAM PARAMETERS  ####
+##############################
+interaction_type=RNA2
+salt_concentration=1.0
+sim_type = MD
+backend = CUDA
+backend_precision = mixed
+use_edge = 1
+edge_n_forces = 1
+CUDA_list = verlet
+CUDA_sort_every = 0
+max_density_multiplier=10
+#max_io = 15
+#debug = 1
+#seed = 42
+
+##############################
+####    SIM PARAMETERS    ####
+##############################
+steps = 1e9
+ensemble = nvt
+thermostat = john
+T = 37C
+dt = 0.003
+verlet_skin = 0.04
+diff_coeff = 2.5
+newtonian_steps = 103
+mismatch_repulsion = 1
+use_average_seq = 0
+seq_dep_file = rna_sequence_dependent_parameters.txt
+
+##############################
+####    INPUT / OUTPUT    ####
+##############################
+topology = ssRNA_rect_science.top
+conf_file = ssRNA_rect_science.dat
+lastconf_file = last_conf.dat
+trajectory_file = trajectory.dat
+refresh_vel = 1
+#log_file = log_trap.dat
+no_stdout_energy = 0
+restart_step_counter = 1
+energy_file = energy_MD.dat
+print_conf_interval = 500000
+print_energy_every = 100000
+time_scale = linear
+
+
